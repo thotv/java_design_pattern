@@ -33,6 +33,7 @@ public class CompositeElement extends DrawingElement {
             for (DrawingElement drawingElement : elements){
                 drawingElement.display(indent+2);
             }
+            //
         }catch (Exception ex){
             ex.printStackTrace();
         }
