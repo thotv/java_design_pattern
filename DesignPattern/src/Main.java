@@ -6,6 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        returnDemo("A");
         System.out.println("Hello World!");
         List ls = new ArrayList<>();
         ls.add("A");
@@ -26,5 +27,15 @@ public class Main {
 //        ls.add("C");
 //        System.out.println(ls);
 //        System.out.println(ls2);
+    }
+    public static void returnDemo(String strDemo){
+        switch (strDemo){
+            case "A":
+                System.out.println(strDemo);
+                return;
+            case "B":
+                System.out.println(strDemo);
+                return;
+        }
     }
 }
