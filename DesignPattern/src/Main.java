@@ -1,11 +1,14 @@
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
+        Calendar cal = Calendar.getInstance();
+        cal.get(Calendar.DAY_OF_WEEK);
         returnDemo("A");
         System.out.println("Hello World!");
         List ls = new ArrayList<>();

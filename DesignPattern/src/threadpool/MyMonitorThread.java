@@ -1,5 +1,7 @@
 package threadpool;
 
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -11,6 +13,11 @@ public class MyMonitorThread implements Runnable {
     private boolean run=true;
 
     public MyMonitorThread(ThreadPoolExecutor executor, int delay)
+    {
+        this.executor = executor;
+        this.seconds=delay;
+    }
+    public MyMonitorThread(ScheduledThreadPoolExecutor executor, int delay)
     {
         this.executor = executor;
         this.seconds=delay;
